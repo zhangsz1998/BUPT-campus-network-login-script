@@ -7,8 +7,8 @@ import getpass
 parser = argparse.ArgumentParser(description="For login in type command: python connect.py --login --username=$usrname --password=$pass")
 
 group = parser.add_mutually_exclusive_group()
-group.add_argument("--login", action="store_true", help="login mode, --username and --password need specifying.")
-group.add_argument("--logout", action="store_true", help="logout mode, no other parameters needed.")
+group.add_argument("--login", action="store_true", help="login mode.")
+group.add_argument("--logout", action="store_true", help="logout mode.")
 args = parser.parse_args()
 
 headers = {
